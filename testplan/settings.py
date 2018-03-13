@@ -60,7 +60,8 @@ ROOT_URLCONF = 'testplan.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,  'templates')],  # move TEMPLATES_DIRS here.
+        # 'DIRS': [os.path.join(BASE_DIR, 'polls/templates')],  # move TEMPLATES_DIRS here.
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # move TEMPLATES_DIRS here.
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -134,6 +135,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'templates'),)
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'polls/templates'),)
 
 
